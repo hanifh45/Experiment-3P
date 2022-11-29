@@ -1,0 +1,8 @@
+create database task3;
+use task3;
+create table users(id int(11) PRIMARY KEY AUTO_INCREMENT,username varchar(255),password varchar(255),firstname varchar(255),lastname varchar(255),email varchar(255),address varchar(255),phone varchar(255),type varchar(255));
+INSERT INTO users(username, password, firstname, lastname, email, address, phone, type) VALUES ("Admin", "111", "ad", "min", "admnin@gmail.com", "jakarta", "123", "admin");
+create table food(id int(11) PRIMARY KEY AUTO_INCREMENT,name varchar(255),image blob,cost varchar(10),product varchar(255));
+create table electronics(id int(11) PRIMARY KEY AUTO_INCREMENT,name varchar(255),image blob,cost varchar(10),product varchar(255));
+create table education(id int(11) PRIMARY KEY AUTO_INCREMENT,name varchar(255),image blob,cost varchar(10),product varchar(255));
+create table medic(id int(11) PRIMARY KEY AUTO_INCREMENT,name varchar(255),image blob,cost varchar(10),product varchar(255));
